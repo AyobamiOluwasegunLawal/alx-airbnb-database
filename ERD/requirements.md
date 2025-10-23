@@ -65,4 +65,4 @@ sent\_at: TIMESTAMP, DEFAULT CURRENT\_TIMESTAMP
 ---
 
 ## Visual Representation of E-R Diagram
-![E-R Diagram](/mnt/c/Users/ayoba/Downloads/Entity_Relationship_Diagram.png)
+![E-R Diagram](/home/ayobami/pictures/Entity_Relationship_Diagram.png)
