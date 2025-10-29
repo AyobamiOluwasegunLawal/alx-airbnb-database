@@ -1,16 +1,16 @@
-select *
-from Property as p
-where (
-	select avg(r.rating)
-	from Review as r
-	where r.property_id = p.property_id
+SELECT *
+FROM Property AS p
+WHERE (
+	SELECT AVG(r.rating)
+	FROM Review AS r
+	WHERE r.property_id = p.property_id
 ) > 4
 
 
-select u.first_name, u.last_name, u.email
-from Users as u
-where (
-	select count(*)
-	from Booking as b
-	where b.user_id = u.user_id
+SELECT u.first_name, u.lASt_name, u.email
+FROM Users AS u
+WHERE (
+	SELECT COUNT(*)
+	FROM Booking AS b
+	WHERE b.user_id = u.user_id
 ) > 1
