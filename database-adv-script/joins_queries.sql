@@ -1,18 +1,22 @@
-select Users.first_name, Users.last_name, Booking.price, Booking.status
-from Users inner join Booking
-on Users.user_id = Booking.user_id
+SELECT Users.first_name, Users.last_name, Booking.price, Booking.status
+FROM Users INNER JOIN Booking
+ON Users.user_id = Booking.user_id
 
-select *
-from Property left join Review
-on Property.property_id = Review.property_id
+SELECT *
+FROM Property LEFT JOIN Review
+ON Property.property_id = Review.property_id
 
-select *
-from Users left join Booking
-on Users.user_id = Booking.user_id
+SELECT *
+FROM Users FULL OUTER JOIN Booking
+ON Users.user_id = Booking.user_id
 
-union
+SELECT *
+FROM Users LEFT JOIN Booking
+ON Users.user_id = Booking.user_id
+
+UNION
 -- if you want duplicates use 'union all'
 
-select *
-from Users right join Booking
-on Users.user_id = booking.user_id
+SELECT *
+FROM Users RIGHT JOIN Booking
+ON Users.user_id = booking.user_id
