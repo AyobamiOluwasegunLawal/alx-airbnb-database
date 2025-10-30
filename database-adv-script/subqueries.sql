@@ -6,7 +6,6 @@ WHERE (
 	WHERE r.property_id = p.property_id
 ) > 4.0
 
-
 SELECT u.first_name, u.last_name, u.email
 FROM Users AS u
 WHERE (
