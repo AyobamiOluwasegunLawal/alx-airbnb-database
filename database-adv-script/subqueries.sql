@@ -7,7 +7,7 @@ WHERE (
 ) > 4.0
 
 
-SELECT u.first_name, u.lASt_name, u.email
+SELECT u.first_name, u.last_name, u.email
 FROM Users AS u
 WHERE (
 	SELECT COUNT(*)
